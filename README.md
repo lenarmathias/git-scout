@@ -7,6 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Tools & Technologies
 
 - **Visual Studio Code**: A popular text editor that was used to write and edit the application's code.
+- **Google Fonts**: A free online library of fonts that was used to enhance the application's typography and overall design.
 - **Git/GitHub**: A version control system and online repository that was used to track changes to the application's code.
 - **HTML**: The application's user interface is built using HTML, which allows for the creation of structured, well-formatted content.
 - **CSS**: The application's styling is done using CSS, which allows for the creation of visually appealing and responsive designs.
