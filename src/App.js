@@ -1,8 +1,22 @@
+import {
+  Routes,
+  Route
+} from "react-router-dom";
 import LogoHeader from "./core/LogoHeader";
+import MainPage from "./features/MainPage";
 
 function App() {
   return (
-    <LogoHeader />
+    <>
+      <LogoHeader />
+
+      <Routes>
+        <Route
+          path="/"
+          element={<MainPage />}
+        />
+      </Routes>
+    </>
   );
 }
 
