@@ -5,10 +5,12 @@ export const theme = {
         ninjaShadow: "#010409cc",
         riverStyx: "#161B22",
         bluePlaza: "#30363D",
-        poolWater: "#1E81F8",
+        skyDancer: "#4493F8",
         riverTour: "#848D97",
         blackIsBack: "#0D1117",
-        blueSash: "#484F58"
+        blueSash: "#484F58",
+        lustPriestess: "#bf398910",
+        blueRuin: "#096bde10"
     },
 
     breakpoints: {
