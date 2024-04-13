@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
+import { UserAvatar } from "../features/MainPage/UsersList/styled";
 
 const ellipseOne = ({ theme }) => theme.colors.lustPriestess;
 const ellipseTwo = ({ theme }) => theme.colors.blueRuin;
@@ -15,6 +16,13 @@ export const CommonContainer = styled.div`
         background: radial-gradient(ellipse at 40% 0%, ${ellipseOne} 0, transparent 75%), 
                     radial-gradient(ellipse at 60% 0%, ${ellipseTwo} 0, transparent 75%);
     `}
+
+    ${({ $action }) => $action && css`
+        min-height: 240px;
+        display: grid;
+        grid-gap: 20px;
+        justify-content: center;
+    `}
 `;
 
 export const GridWrapper = styled.div`
@@ -29,6 +37,14 @@ export const GridWrapper = styled.div`
             grid-gap: 16px;
             display: flex;
             flex-direction: column-reverse;
+        }
+    `}
+
+    ${({ $biggerGap }) => $biggerGap && css`
+        grid-gap: 10px;
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.mediumMobile}) {
+            grid-gap: 16px;
         }
     `}
 `;
@@ -52,6 +68,19 @@ export const MinorHeading = styled.h2`
 
 export const CommonParagraph = styled.p`
     margin: 0;
+
+    ${({ $actionText }) => $actionText && css`
+        font-size: 20px;
+        font-weight: 700;
+        color: ${({ theme }) => theme.colors.white};
+        text-align: center;
+    `}
+
+    ${({ $usersList }) => $usersList && css`
+        font-size: 18px;
+        align-self: center;
+        transition: 0.5s;
+    `}
 `;
 
 export const NavigationLink = styled(NavLink)`
@@ -60,7 +89,25 @@ export const NavigationLink = styled(NavLink)`
     text-decoration: none;
     font-weight: 700;
 
-    &:hover {
-        text-decoration: underline;
-    }
+    ${({ $underline }) => $underline && css`
+        &:hover {
+            text-decoration: underline;
+        }  
+    `}
+
+    ${({ $usersList }) => $usersList && css`
+        color: inherit;
+        display: grid;
+        grid-template-columns: max-content 1fr;
+        grid-gap: 20px;
+
+        &:hover > ${UserAvatar} {
+            outline: 2px ${({ theme }) => theme.colors.white} solid;
+        }
+
+        &:hover > * {
+            text-decoration: none;
+            color: ${({ theme }) => theme.colors.white};
+        }
+    `}
 `;

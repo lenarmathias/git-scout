@@ -18,7 +18,7 @@ const InfoPanel = () => (
                     This small project, inspired by GitHub and its design, is intended for my portfolio and utilizes its API.
                 </CommonParagraph>
             </GridWrapper>
-            <NavigationLink>
+            <NavigationLink $underline>
                 Learn more
             </NavigationLink>
         </FlexWrapper>
