@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.js": "/git-scout/static/js/main.b368755a.js",
+    "static/js/453.b005d476.chunk.js": "/git-scout/static/js/453.b005d476.chunk.js",
+    "static/media/GitScoutError.svg": "/git-scout/static/media/GitScoutError.8ec360acc764ceac60e14d3adbfa0c94.svg",
+    "static/media/GitScoutLogo.svg": "/git-scout/static/media/GitScoutLogo.cd91be07b887e15af4ae46a53c6d04f5.svg",
+    "static/media/LoadingCircle.svg": "/git-scout/static/media/LoadingCircle.84df26d2a30b30526cc6777eac466d78.svg",
+    "static/media/GitScoutIdle.svg": "/git-scout/static/media/GitScoutIdle.5a04b92761138bec5147b92a9dca321c.svg",
+    "static/media/GitScoutNotFound.svg": "/git-scout/static/media/GitScoutNotFound.2732a42f476f63138fef85428756ee0a.svg",
+    "index.html": "/git-scout/index.html",
+    "main.b368755a.js.map": "/git-scout/static/js/main.b368755a.js.map",
+    "453.b005d476.chunk.js.map": "/git-scout/static/js/453.b005d476.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.b368755a.js"
+  ]
+}
