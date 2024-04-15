@@ -89,11 +89,13 @@ export const NavigationLink = styled(NavLink)`
     text-decoration: none;
     font-weight: 700;
 
-    ${({ $underline }) => $underline && css`
-        &:hover {
-            text-decoration: underline;
-        }  
-    `}
+    @media (hover: hover) {
+        ${({ $underline }) => $underline && css`
+            &:hover {
+                text-decoration: underline;
+            }  
+        `}
+    }
 
     ${({ $usersList }) => $usersList && css`
         color: inherit;
@@ -106,7 +108,6 @@ export const NavigationLink = styled(NavLink)`
         }
 
         &:hover > * {
-            text-decoration: none;
             color: ${({ theme }) => theme.colors.white};
         }
     `}

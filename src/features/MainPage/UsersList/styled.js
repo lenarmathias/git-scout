@@ -3,6 +3,14 @@ import styled from "styled-components";
 export const UsernamesList = styled.ul`
     list-style: none;
     padding-right: 40px;
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.mediumMobile}) {
+        padding: 0 20px;
+    }
+
+    @media (max-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+        padding: 0 10px;
+    }
 `;
 
 export const UserListItem = styled.li`
@@ -11,8 +19,10 @@ export const UserListItem = styled.li`
     border-bottom: 1px ${({ theme }) => theme.colors.bluePlaza} solid;
     transition: 0.5s;
     
-    &:hover {
-        border-bottom: 1px ${({ theme }) => theme.colors.white} solid;
+    @media (hover: hover) {
+        &:hover {
+            border-bottom: 1px ${({ theme }) => theme.colors.white} solid;
+        }
     }
 
     &:last-of-type {
