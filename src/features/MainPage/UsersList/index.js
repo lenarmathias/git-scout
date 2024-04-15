@@ -22,7 +22,6 @@ const UsersList = ({
     apiError
 }) => {
     const users = usernamesData.items;
-    console.log(users);
 
     if (username === "") {
         return <Idle />;
