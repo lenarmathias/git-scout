@@ -4,12 +4,12 @@ import Loading from "./Actions/Loading";
 import NotFound from "./Actions/NotFound";
 import {
     UsernamesList,
-    UserListItem,
-    UserAvatar
+    UserListItem
 } from "./styled";
 import {
     CommonContainer,
     MinorHeading,
+    UserAvatar,
     NavigationLink,
     CommonParagraph
 } from "../../../common/styled";

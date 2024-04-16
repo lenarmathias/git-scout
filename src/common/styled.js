@@ -1,7 +1,6 @@
 import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
 import { GitScoutLogo } from "../core/LogoHeader/styled";
-import { UserAvatar } from "../features/MainPage/UsersList/styled";
 
 const ellipseOne = ({ theme }) => theme.colors.lustPriestess;
 const ellipseTwo = ({ theme }) => theme.colors.blueRuin;
@@ -39,6 +38,20 @@ export const GridWrapper = styled.div`
             display: flex;
             flex-direction: column-reverse;
         }
+    `}
+
+    ${({ $infoPageWrapper }) => $infoPageWrapper && css`
+        grid-template-columns: 1fr max-content;
+        grid-gap: 10px;
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.mediumMobile}) {
+            grid-gap: 16px;
+        }
+    `}
+
+    ${({ $userDetails }) => $userDetails && css`
+        grid-template-columns: repeat(2, max-content);
+        align-items: center;
     `}
 
     ${({ $biggerGap }) => $biggerGap && css`
@@ -81,6 +94,19 @@ export const CommonParagraph = styled.p`
         font-size: 18px;
         align-self: center;
         transition: 0.5s;
+    `}
+`;
+
+export const UserAvatar = styled.img`
+    width: 50px;
+    border: 2px ${({ theme }) => theme.colors.riverStyx} solid;
+    border-radius: 50%;
+    outline: 2px ${({ theme }) => theme.colors.bluePlaza} solid;
+    transition: 0.5s;
+
+    ${({ $detailsAvatar }) => $detailsAvatar && css`
+        width: 100px;
+        outline: 2px ${({ theme }) => theme.colors.white} solid;
     `}
 `;
 
