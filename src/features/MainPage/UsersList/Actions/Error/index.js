@@ -1,8 +1,6 @@
 import { ErrorIcon } from "../styled";
-import {
-    CommonContainer,
-    CommonParagraph
-} from "../../../../../common/styled";
+import { CommonContainer } from "../../../../../common/Containers/styled";
+import { CommonParagraph } from "../../../../../common/Texts/styled";
 
 const Error = () => (
     <CommonContainer $action>

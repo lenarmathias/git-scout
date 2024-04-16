@@ -6,13 +6,13 @@ import {
     UsernamesList,
     UserListItem
 } from "./styled";
+import { CommonContainer } from "../../../common/Containers/styled";
 import {
-    CommonContainer,
     MinorHeading,
-    UserAvatar,
-    NavigationLink,
     CommonParagraph
-} from "../../../common/styled";
+} from "../../../common/Texts/styled";
+import { UserAvatar } from "../../../common/Elements/styled";
+import { NavigationLink } from "../../../common/Links/styled";
 
 const UsersList = ({
     username,

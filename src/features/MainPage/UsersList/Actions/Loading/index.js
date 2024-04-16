@@ -1,5 +1,5 @@
 import { LoadingCircle } from "../styled";
-import { CommonContainer } from "../../../../../common/styled";
+import { CommonContainer } from "../../../../../common/Containers/styled";
 
 const Loading = () => (
     <CommonContainer $action>

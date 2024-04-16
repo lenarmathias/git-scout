@@ -3,7 +3,7 @@ import { useUsernamesApi } from "./useUsernamesApi";
 import SearchPanel from "./SearchPanel";
 import InfoPanel from "./InfoPanel";
 import UsersList from "./UsersList";
-import { GridWrapper } from "../../common/styled";
+import { GridWrapper } from "../../common/Wrappers/styled";
 
 const MainPage = () => {
     const {

@@ -1,9 +1,9 @@
+import { CommonContainer } from "../../../common/Containers/styled";
 import {
-    CommonContainer,
-    GridWrapper,
     MinorHeading,
     CommonParagraph
-} from "../../../common/styled";
+} from "../../../common/Texts/styled";
+import { GridWrapper } from "../../../common/Wrappers/styled";
 
 const ProjectInfo = () => (
     <CommonContainer $infoContainer>

@@ -1,6 +1,6 @@
 import ProjectInfo from "./ProjectInfo";
 import AuthorPanel from "./AuthorPanel";
-import { GridWrapper } from "../../common/styled";
+import { GridWrapper } from "../../common/Wrappers/styled";
 
 const InfoPage = () => (
     <GridWrapper $infoPageWrapper>

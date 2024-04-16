@@ -1,11 +1,13 @@
+import { CommonContainer } from "../../../common/Containers/styled";
+import { NavigationLink } from "../../../common/Links/styled";
 import {
-    CommonContainer,
-    FlexWrapper,
-    GridWrapper,
     MinorHeading,
-    CommonParagraph,
-    NavigationLink
-} from "../../../common/styled";
+    CommonParagraph
+} from "../../../common/Texts/styled";
+import {
+    GridWrapper,
+    FlexWrapper
+} from "../../../common/Wrappers/styled";
 
 const InfoPanel = () => (
     <CommonContainer $infoContainer>

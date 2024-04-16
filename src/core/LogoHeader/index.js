@@ -3,7 +3,7 @@ import {
     GitScoutLogo,
     MainHeading
 } from "./styled";
-import { NavigationLink } from "../../common/styled";
+import { NavigationLink } from "../../common/Links/styled";
 
 const LogoHeader = () => (
     <HeaderWrapper>
