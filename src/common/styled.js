@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { NavLink } from "react-router-dom";
+import { GitScoutLogo } from "../core/LogoHeader/styled";
 import { UserAvatar } from "../features/MainPage/UsersList/styled";
 
 const ellipseOne = ({ theme }) => theme.colors.lustPriestess;
@@ -85,17 +86,37 @@ export const CommonParagraph = styled.p`
 
 export const NavigationLink = styled(NavLink)`
     width: max-content;
-    color: ${({ theme }) => theme.colors.skyDancer};
     text-decoration: none;
-    font-weight: 700;
 
-    @media (hover: hover) {
-        ${({ $underline }) => $underline && css`
+    ${({ $logoHeader }) => $logoHeader && css`
+        display: grid;
+        grid-template-columns: repeat(2, max-content);
+        grid-gap: 16px;
+        align-items: center;
+
+        @media (hover: hover) {
+            &:hover > ${GitScoutLogo} {
+                transform: scale(1.2);
+            }  
+        }
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.smallMobile}) {
+            grid-template-columns: max-content;
+            text-align: center;
+            grid-gap: 6px;
+        }
+    `}
+
+    ${({ $blueLink }) => $blueLink && css`
+        color: ${({ theme }) => theme.colors.skyDancer};
+        font-weight: 700;
+
+        @media (hover: hover) {
             &:hover {
                 text-decoration: underline;
             }  
-        `}
-    }
+        }
+    `}
 
     ${({ $usersList }) => $usersList && css`
         color: inherit;
