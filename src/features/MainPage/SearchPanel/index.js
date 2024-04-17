@@ -1,10 +1,10 @@
 import { SearchBar } from "./styled";
+import { CommonContainer } from "../../../common/Containers/styled";
+import { GridWrapper } from "../../../common/Wrappers/styled";
 import {
-    CommonContainer,
-    GridWrapper,
     MinorHeading,
-    CommonParagraph,
-} from "../../../common/styled";
+    CommonParagraph
+} from "../../../common/Texts/styled";
 
 const SearchPanel = ({ username, handleInputChange }) => (
     <CommonContainer>

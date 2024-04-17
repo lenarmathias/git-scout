@@ -21,10 +21,18 @@ export const GlobalStyle = createGlobalStyle`
         @media (max-width: ${({ theme }) => theme.breakpoints.largeMobile}) {
             margin: 40px auto 40px !important;
         }
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.largeMobile}) {
+            margin: 20px auto 20px !important;
+        }
     }
 
     h1, h2, input {
         color: ${({ theme }) => theme.colors.white};
+    }
+
+    p {
+        line-height: 1.5;
     }
 
     a {

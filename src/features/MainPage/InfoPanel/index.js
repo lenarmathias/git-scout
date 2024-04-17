@@ -1,11 +1,13 @@
+import { CommonContainer } from "../../../common/Containers/styled";
+import { NavigationLink } from "../../../common/Links/styled";
 import {
-    CommonContainer,
-    FlexWrapper,
-    GridWrapper,
     MinorHeading,
-    CommonParagraph,
-    NavigationLink
-} from "../../../common/styled";
+    CommonParagraph
+} from "../../../common/Texts/styled";
+import {
+    GridWrapper,
+    FlexWrapper
+} from "../../../common/Wrappers/styled";
 
 const InfoPanel = () => (
     <CommonContainer $infoContainer>
@@ -18,7 +20,10 @@ const InfoPanel = () => (
                     This small project, inspired by GitHub and its design, is intended for my portfolio and utilizes its API.
                 </CommonParagraph>
             </GridWrapper>
-            <NavigationLink $underline>
+            <NavigationLink
+                to="/info"
+                $blueLink
+            >
                 Learn more
             </NavigationLink>
         </FlexWrapper>

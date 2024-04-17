@@ -4,15 +4,15 @@ import Loading from "./Actions/Loading";
 import NotFound from "./Actions/NotFound";
 import {
     UsernamesList,
-    UserListItem,
-    UserAvatar
+    UserListItem
 } from "./styled";
+import { CommonContainer } from "../../../common/Containers/styled";
 import {
-    CommonContainer,
     MinorHeading,
-    NavigationLink,
     CommonParagraph
-} from "../../../common/styled";
+} from "../../../common/Texts/styled";
+import { UserAvatar } from "../../../common/Elements/styled";
+import { NavigationLink } from "../../../common/Links/styled";
 
 const UsersList = ({
     username,
@@ -22,7 +22,6 @@ const UsersList = ({
     apiError
 }) => {
     const users = usernamesData.items;
-    console.log(users);
 
     if (username === "") {
         return <Idle />;
