@@ -31,6 +31,10 @@ export const GlobalStyle = createGlobalStyle`
         color: ${({ theme }) => theme.colors.white};
     }
 
+    p {
+        line-height: 1.5;
+    }
+
     a {
         -webkit-tap-highlight-color: transparent;
     }
