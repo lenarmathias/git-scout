@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.js": "/git-scout/static/js/main.b368755a.js",
+    "main.js": "/git-scout/static/js/main.ff2edb0b.js",
     "static/js/453.b005d476.chunk.js": "/git-scout/static/js/453.b005d476.chunk.js",
+    "static/media/WebsiteIcon.svg": "/git-scout/static/media/WebsiteIcon.53d8eddeb42e814aead86fafd8a53594.svg",
     "static/media/GitScoutError.svg": "/git-scout/static/media/GitScoutError.8ec360acc764ceac60e14d3adbfa0c94.svg",
     "static/media/GitScoutLogo.svg": "/git-scout/static/media/GitScoutLogo.cd91be07b887e15af4ae46a53c6d04f5.svg",
     "static/media/LoadingCircle.svg": "/git-scout/static/media/LoadingCircle.84df26d2a30b30526cc6777eac466d78.svg",
     "static/media/GitScoutIdle.svg": "/git-scout/static/media/GitScoutIdle.5a04b92761138bec5147b92a9dca321c.svg",
     "static/media/GitScoutNotFound.svg": "/git-scout/static/media/GitScoutNotFound.2732a42f476f63138fef85428756ee0a.svg",
+    "static/media/LinkedInIcon.svg": "/git-scout/static/media/LinkedInIcon.a236a02cbeb24525fd3bcf55fc6e41c6.svg",
+    "static/media/GitHubIcon.svg": "/git-scout/static/media/GitHubIcon.82b40ba2e935be31f63ebdfea0c449be.svg",
     "index.html": "/git-scout/index.html",
-    "main.b368755a.js.map": "/git-scout/static/js/main.b368755a.js.map",
+    "static/media/GmailIcon.svg": "/git-scout/static/media/GmailIcon.5f93003b135e241b018af7d37cf22723.svg",
+    "main.ff2edb0b.js.map": "/git-scout/static/js/main.ff2edb0b.js.map",
     "453.b005d476.chunk.js.map": "/git-scout/static/js/453.b005d476.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.b368755a.js"
+    "static/js/main.ff2edb0b.js"
   ]
 }
