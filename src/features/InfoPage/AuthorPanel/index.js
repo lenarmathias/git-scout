@@ -24,6 +24,7 @@ const AuthorPanel = () => (
             </MinorHeading>
             <GridWrapper $switchHidden>
                 <NavigationLink
+                    to="/user/lenarmathias"
                     $usersList
                     $wrapColumns
                 >

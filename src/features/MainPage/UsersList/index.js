@@ -53,7 +53,10 @@ const UsersList = ({
                 <UsernamesList>
                     {users.map(user => (
                         <UserListItem key={user.id}>
-                            <NavigationLink $usersList>
+                            <NavigationLink
+                                to={`/user/${user.login}`}
+                                $usersList
+                            >
                                 <UserAvatar
                                     src={user.avatar_url}
                                     alt="User avatar"
