@@ -1,9 +1,9 @@
 import {
     GitHubIcon,
     WebsiteIcon,
-    GmailIcon,
+    MailIcon,
     LinkedInIcon
-} from "./styled";
+} from "../../../common/Icons/styled";
 import {
     MinorHeading,
     CommonParagraph
@@ -65,7 +65,7 @@ const AuthorPanel = () => (
                         href="mailto:lenarmathias@gmail.com"
                         $icons
                     >
-                        <GmailIcon />
+                        <MailIcon />
                     </NavigationLink>
                     <NavigationLink
                         as="a"
