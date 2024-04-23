@@ -15,7 +15,7 @@ export const GridWrapper = styled.div`
         }
     `}
 
-    ${({ $infoPageWrapper }) => $infoPageWrapper && css`
+    ${({ $normalWrapper }) => $normalWrapper && css`
         grid-template-columns: 1fr max-content;
         grid-gap: 10px;
 
@@ -50,9 +50,30 @@ export const GridWrapper = styled.div`
         }
     `}
 
+    ${({ $detailsIcons }) => $detailsIcons && css`
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.largeMobile}) {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+    `}
+
     ${({ $switchHidden }) => $switchHidden && css`
         @media (max-width: ${({ theme }) => theme.breakpoints.midSmallMobile}) {
             display: none;
+        }
+    `}
+
+    ${({ $mainDetails }) => $mainDetails && css`
+        grid-template-columns: repeat(4, max-content);
+        grid-gap: 20px;
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.compact}) {
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, max-content);
         }
     `}
 `;
@@ -81,5 +102,15 @@ export const FlexWrapper = styled.div`
 
     ${({ $spaceAround }) => $spaceAround && css`
         justify-content: space-around;
+    `}
+
+    ${({ $detailsFlex }) => $detailsFlex && css`
+        gap: 20px;
+    `}
+
+    ${({ $compactWrap }) => $compactWrap && css`
+        @media (max-width: ${({ theme }) => theme.breakpoints.compact}) {
+            flex-direction: row;
+        }
     `}
 `;

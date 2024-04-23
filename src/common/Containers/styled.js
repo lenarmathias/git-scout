@@ -22,3 +22,10 @@ export const CommonContainer = styled.div`
         justify-content: center;
     `}
 `;
+
+export const TopBorder = styled.div`
+    @media (max-width: ${({ theme }) => theme.breakpoints.compact}) {
+        padding-top: 16px;
+        border-top: 1px ${({ theme }) => theme.colors.riverTour} solid;
+    }
+`;

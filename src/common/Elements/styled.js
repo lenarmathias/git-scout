@@ -15,4 +15,9 @@ export const UserAvatar = styled.img`
             width: auto;
         }
     `}
+
+    ${({ $detailsPage }) => $detailsPage && css`
+        width: 100px;
+        outline: 2px ${({ theme }) => theme.colors.white} solid;
+    `}
 `;

@@ -18,6 +18,7 @@ export const theme = {
         midSmallMobile: "400px",
         mediumMobile: "500px",
         intermediateMobile: "600px",
+        compact: "650px",
         largeMobile: "700px",
         tablet: "900px"
     }
