@@ -8,11 +8,9 @@ const DetailsPage = () => {
     const { username } = useParams();
     const {
         apiObject,
-        // loading,
-        // apiSuccess
+        loading,
+        apiSuccess
     } = useUserDetailsApi(username);
-
-    console.log(apiObject); // <-------------------------------------TEST
 
     return (
         <GridWrapper $normalWrapper>

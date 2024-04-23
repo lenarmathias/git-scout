@@ -1,7 +1,7 @@
-import Error from "./Actions/Error";
-import Idle from "./Actions/Idle";
-import Loading from "./Actions/Loading";
-import NotFound from "./Actions/NotFound";
+import Error from "../../../common/Actions/Error";
+import Idle from "../../../common/Actions/Idle";
+import Loading from "../../../common/Actions/Loading";
+import NotFound from "../../../common/Actions/NotFound";
 import {
     UsernamesList,
     UserListItem
