@@ -3,7 +3,7 @@ import AuthorPanel from "./AuthorPanel";
 import { GridWrapper } from "../../common/Wrappers/styled";
 
 const InfoPage = () => (
-    <GridWrapper $infoPageWrapper>
+    <GridWrapper $normalWrapper>
         <ProjectInfo />
         <AuthorPanel />
     </GridWrapper>

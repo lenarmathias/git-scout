@@ -1,6 +1,6 @@
 import { NotFoundIcon } from "../styled";
-import { CommonContainer } from "../../../../../common/Containers/styled";
-import { CommonParagraph } from "../../../../../common/Texts/styled";
+import { CommonContainer } from "../../Containers/styled";
+import { CommonParagraph } from "../../Texts/styled";
 
 const NotFound = () => (
     <CommonContainer $action>

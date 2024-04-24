@@ -21,4 +21,22 @@ export const CommonContainer = styled.div`
         grid-gap: 20px;
         justify-content: center;
     `}
+
+    ${({ $repoTile }) => $repoTile && css`
+        max-width: 100%;
+        transition: 0.5s;
+
+        @media (hover: hover) {
+            &:hover {
+                outline: 2px ${({ theme }) => theme.colors.skyDancer} solid;
+            }
+        }
+    `}
+`;
+
+export const TopBorder = styled.div`
+    @media (max-width: ${({ theme }) => theme.breakpoints.compact}) {
+        padding-top: 16px;
+        border-top: 1px ${({ theme }) => theme.colors.riverTour} solid;
+    }
 `;
