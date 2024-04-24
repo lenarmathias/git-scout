@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useUserDetailsApi } from "./useUserDetailsApi";
 import MainDetails from "./MainDetails";
 import UserLinks from "./UserLinks";
+import UserRepositories from "./UserRepositories";
 import { GridWrapper } from "../../common/Wrappers/styled";
 
 const DetailsPage = () => {
@@ -13,13 +14,20 @@ const DetailsPage = () => {
     } = useUserDetailsApi(username);
 
     return (
-        <GridWrapper $normalWrapper>
-            <MainDetails
-                details={apiObject}
-            />
-            <UserLinks
-                details={apiObject}
-            />
+        <GridWrapper $biggerGap>
+            <GridWrapper $normalWrapper>
+                <MainDetails
+                    details={apiObject}
+                />
+                <UserLinks
+                    details={apiObject}
+                />
+            </GridWrapper>
+            {apiObject.public_repos !== 0 && (
+                <UserRepositories
+                    userRepos={apiObject.repos_url}
+                />
+            )}
         </GridWrapper>
     )
 };

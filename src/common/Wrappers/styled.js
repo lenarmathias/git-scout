@@ -34,6 +34,10 @@ export const GridWrapper = styled.div`
         }
     `}
 
+    ${({ $biggestGap }) => $biggestGap && css`
+        grid-gap: 16px;
+    `}
+
     ${({ $iconsWrap }) => $iconsWrap && css`
         grid-template-columns: repeat(2, max-content);
         grid-template-rows: repeat(2, max-content);
@@ -76,6 +80,19 @@ export const GridWrapper = styled.div`
             grid-template-rows: repeat(4, max-content);
         }
     `}
+
+    ${({ $repoWrapper }) => $repoWrapper && css`
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 16px;
+
+        @media (max-width: ${({ theme }) => theme.breakpoints.compact}) {
+            grid-template-columns: 1fr;
+        }
+    `}
+
+    ${({ $bottomMargin }) => $bottomMargin && css`
+        margin-bottom: 20px;
+    `}
 `;
 
 export const FlexWrapper = styled.div`
@@ -106,6 +123,11 @@ export const FlexWrapper = styled.div`
 
     ${({ $detailsFlex }) => $detailsFlex && css`
         gap: 20px;
+    `}
+
+    ${({ $row }) => $row && css`
+        height: max-content;
+        flex-direction: row;
     `}
 
     ${({ $compactWrap }) => $compactWrap && css`

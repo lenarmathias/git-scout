@@ -40,6 +40,10 @@ export const MinorHeading = styled.h2`
             text-align: right;
         }
     `}
+
+    ${({ $marginAround }) => $marginAround && css`
+        margin: 16px;
+    `}
 `;
 
 export const CommonParagraph = styled.p`
@@ -79,4 +83,9 @@ export const CommonParagraph = styled.p`
             text-align: right;
         }
     `}
+`;
+
+export const SpanParagraph = styled.span`
+    font-weight: 700;
+    color: ${({ theme }) => theme.colors.white};
 `;
