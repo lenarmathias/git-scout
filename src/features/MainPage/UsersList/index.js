@@ -19,7 +19,6 @@ const UsersList = ({
     usernamesData,
     loading,
     apiSuccess,
-    apiError
 }) => {
     const users = usernamesData.items;
 
@@ -27,7 +26,7 @@ const UsersList = ({
         return <Idle />;
     }
 
-    if (apiError === true) {
+    if (apiSuccess === false) {
         return <Error />;
     }
 

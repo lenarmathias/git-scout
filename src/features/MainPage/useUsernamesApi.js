@@ -7,7 +7,6 @@ export const useUsernamesApi = (username) => {
     const [usernamesData, setUsernamesData] = useState([]);
     const [loading, setLoading] = useState(false);
     const [apiSuccess, setApiSuccess] = useState(undefined);
-    const [apiError, setApiError] = useState(false);
 
     useEffect(() => {
         let timeoutId;
@@ -24,7 +23,6 @@ export const useUsernamesApi = (username) => {
                     console.log(error);
                     setLoading(false);
                     setApiSuccess(false);
-                    setApiError(true);
                 }
             }, 1000);
         }
@@ -35,6 +33,5 @@ export const useUsernamesApi = (username) => {
         usernamesData,
         loading,
         apiSuccess,
-        apiError
     };
 };
