@@ -25,6 +25,8 @@ const ProjectInfo = () => (
                 as="a"
                 href="https://github.com/lenarmathias/git-scout"
                 $blueLink
+                target="_blank"
+                rel="noreferrer noopener"
             >
                 Link to GitHub Repo
             </NavigationLink>

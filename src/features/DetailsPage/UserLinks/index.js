@@ -18,6 +18,8 @@ const UserLinks = ({ details }) => (
                 as="a"
                 href={details.html_url}
                 $icons
+                target="_blank"
+                rel="noreferrer noopener"
             >
                 <GitHubIcon />
             </NavigationLink>
@@ -26,6 +28,8 @@ const UserLinks = ({ details }) => (
                     as="a"
                     href={`https://twitter.com/${details.twitter_username}`}
                     $icons
+                    target="_blank"
+                    rel="noreferrer noopener"
                 >
                     <XIcon />
                 </NavigationLink>
@@ -37,6 +41,8 @@ const UserLinks = ({ details }) => (
                     as="a"
                     href={details.blog}
                     $icons
+                    target="_blank"
+                    rel="noreferrer noopener"
                 >
                     <WebsiteIcon />
                 </NavigationLink>

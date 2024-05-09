@@ -50,6 +50,8 @@ const AuthorPanel = () => (
                         as="a"
                         href="https://github.com/lenarmathias"
                         $icons
+                        target="_blank"
+                        rel="noreferrer noopener"
                     >
                         <GitHubIcon />
                     </NavigationLink>
@@ -57,6 +59,8 @@ const AuthorPanel = () => (
                         as="a"
                         href="https://lenarmathias.github.io/personal-homepage/"
                         $icons
+                        target="_blank"
+                        rel="noreferrer noopener"
                     >
                         <WebsiteIcon />
                     </NavigationLink>
@@ -71,6 +75,8 @@ const AuthorPanel = () => (
                         as="a"
                         href="https://www.linkedin.com/in/lenarmathias/"
                         $icons
+                        target="_blank"
+                        rel="noreferrer noopener"
                     >
                         <LinkedInIcon />
                     </NavigationLink>
