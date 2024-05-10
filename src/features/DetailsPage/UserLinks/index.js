@@ -1,3 +1,4 @@
+import IconLink from "../../../common/Elements/IconLink";
 import {
     DisabledXIcon,
     DisabledWebsiteIcon
@@ -9,43 +10,27 @@ import {
 } from "../../../common/Icons/styled";
 import { CommonContainer } from "../../../common/Containers/styled";
 import { GridWrapper } from "../../../common/Wrappers/styled";
-import { NavigationLink } from "../../../common/Links/styled";
 
 const UserLinks = ({ details }) => (
     <CommonContainer>
         <GridWrapper $detailsIcons>
-            <NavigationLink
-                as="a"
-                href={details.html_url}
-                $icons
-                target="_blank"
-                rel="noreferrer noopener"
-            >
-                <GitHubIcon />
-            </NavigationLink>
+            <IconLink
+                address={details.html_url}
+                children={<GitHubIcon />}
+            />
             {details.twitter_username !== null ? (
-                <NavigationLink
-                    as="a"
-                    href={`https://twitter.com/${details.twitter_username}`}
-                    $icons
-                    target="_blank"
-                    rel="noreferrer noopener"
-                >
-                    <XIcon />
-                </NavigationLink>
+                <IconLink
+                    address={`https://twitter.com/${details.twitter_username}`}
+                    children={<XIcon />}
+                />
             ) : (
                 <DisabledXIcon />
             )}
             {details.blog !== "" ? (
-                <NavigationLink
-                    as="a"
-                    href={details.blog}
-                    $icons
-                    target="_blank"
-                    rel="noreferrer noopener"
-                >
-                    <WebsiteIcon />
-                </NavigationLink>
+                <IconLink
+                    address={details.blog}
+                    children={<WebsiteIcon />}
+                />
             ) : (
                 <DisabledWebsiteIcon />
             )}
