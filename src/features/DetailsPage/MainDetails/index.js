@@ -14,7 +14,10 @@ import {
 import { UserAvatar } from "../../../common/Elements/styled";
 
 const MainDetails = ({ details }) => (
-    <CommonContainer $infoContainer>
+    <CommonContainer
+        as="section"
+        $infoContainer
+    >
         <FlexWrapper $detailsFlex>
             <GridWrapper $mainDetails>
                 <GridWrapper>

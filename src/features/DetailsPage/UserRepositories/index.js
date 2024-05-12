@@ -33,7 +33,10 @@ const UserRepositories = ({ userRepos }) => {
     }
 
     return (
-        <GridWrapper $biggestGap>
+        <GridWrapper
+            as="section"
+            $biggestGap
+        >
             <MinorHeading $marginAround>
                 Repositories:
             </MinorHeading>
@@ -69,6 +72,8 @@ const UserRepositories = ({ userRepos }) => {
                                     as="a"
                                     href={repo.html_url}
                                     $blueLink
+                                    target="_blank"
+                                    rel="noreferrer noopener"
                                 >
                                     Repo
                                 </NavigationLink>
@@ -77,6 +82,8 @@ const UserRepositories = ({ userRepos }) => {
                                         as="a"
                                         href={repo.homepage}
                                         $blueLink
+                                        target="_blank"
+                                        rel="noreferrer noopener"
                                     >
                                         Demo
                                     </NavigationLink>

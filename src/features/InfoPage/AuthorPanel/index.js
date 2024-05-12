@@ -1,3 +1,4 @@
+import IconLink from "../../../common/Elements/IconLink";
 import {
     GitHubIcon,
     WebsiteIcon,
@@ -17,7 +18,7 @@ import { UserAvatar } from "../../../common/Elements/styled";
 import { NavigationLink } from "../../../common/Links/styled";
 
 const AuthorPanel = () => (
-    <CommonContainer>
+    <CommonContainer as="aside">
         <FlexWrapper $authorPanel>
             <MinorHeading $switchHidden>
                 Author
@@ -46,34 +47,23 @@ const AuthorPanel = () => (
             </GridWrapper>
             <FlexWrapper $spaceAround>
                 <GridWrapper $iconsWrap>
-                    <NavigationLink
-                        as="a"
-                        href="https://github.com/lenarmathias"
-                        $icons
-                    >
-                        <GitHubIcon />
-                    </NavigationLink>
-                    <NavigationLink
-                        as="a"
-                        href="https://lenarmathias.github.io/personal-homepage/"
-                        $icons
-                    >
-                        <WebsiteIcon />
-                    </NavigationLink>
-                    <NavigationLink
-                        as="a"
-                        href="mailto:lenarmathias@gmail.com"
-                        $icons
-                    >
-                        <MailIcon />
-                    </NavigationLink>
-                    <NavigationLink
-                        as="a"
-                        href="https://www.linkedin.com/in/lenarmathias/"
-                        $icons
-                    >
-                        <LinkedInIcon />
-                    </NavigationLink>
+                    <IconLink
+                        address="https://github.com/lenarmathias"
+                        children={<GitHubIcon />}
+                    />
+                    <IconLink
+                        address="https://lenarmathias.github.io/personal-homepage/"
+                        children={<WebsiteIcon />}
+                    />
+                    <IconLink
+                        address="mailto:lenarmathias@gmail.com"
+                        children={<MailIcon />}
+                        mailLink
+                    />
+                    <IconLink
+                        address="https://www.linkedin.com/in/lenarmathias/"
+                        children={<LinkedInIcon />}
+                    />
                 </GridWrapper>
             </FlexWrapper>
         </FlexWrapper>

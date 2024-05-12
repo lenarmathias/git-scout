@@ -7,7 +7,10 @@ import { GridWrapper } from "../../../common/Wrappers/styled";
 import { NavigationLink } from "../../../common/Links/styled";
 
 const ProjectInfo = () => (
-    <CommonContainer $infoContainer>
+    <CommonContainer
+        as="section"
+        $infoContainer
+    >
         <GridWrapper>
             <MinorHeading>
                 Project Info
@@ -25,6 +28,8 @@ const ProjectInfo = () => (
                 as="a"
                 href="https://github.com/lenarmathias/git-scout"
                 $blueLink
+                target="_blank"
+                rel="noreferrer noopener"
             >
                 Link to GitHub Repo
             </NavigationLink>

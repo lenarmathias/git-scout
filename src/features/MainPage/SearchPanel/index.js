@@ -7,7 +7,7 @@ import {
 } from "../../../common/Texts/styled";
 
 const SearchPanel = ({ username, handleInputChange }) => (
-    <CommonContainer>
+    <CommonContainer as="section">
         <GridWrapper>
             <MinorHeading>
                 Search GitHub user

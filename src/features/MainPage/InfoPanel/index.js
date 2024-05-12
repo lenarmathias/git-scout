@@ -10,7 +10,10 @@ import {
 } from "../../../common/Wrappers/styled";
 
 const InfoPanel = () => (
-    <CommonContainer $infoContainer>
+    <CommonContainer
+        as="aside"
+        $infoContainer
+    >
         <FlexWrapper>
             <GridWrapper>
                 <MinorHeading>
