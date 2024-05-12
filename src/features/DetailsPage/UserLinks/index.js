@@ -12,7 +12,7 @@ import { CommonContainer } from "../../../common/Containers/styled";
 import { GridWrapper } from "../../../common/Wrappers/styled";
 
 const UserLinks = ({ details }) => (
-    <CommonContainer>
+    <CommonContainer as="aside">
         <GridWrapper $detailsIcons>
             <IconLink
                 address={details.html_url}

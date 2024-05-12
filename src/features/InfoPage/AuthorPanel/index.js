@@ -18,7 +18,7 @@ import { UserAvatar } from "../../../common/Elements/styled";
 import { NavigationLink } from "../../../common/Links/styled";
 
 const AuthorPanel = () => (
-    <CommonContainer>
+    <CommonContainer as="aside">
         <FlexWrapper $authorPanel>
             <MinorHeading $switchHidden>
                 Author

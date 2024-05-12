@@ -45,7 +45,7 @@ const UsersList = ({
 
     if (apiSuccess === true) {
         return (
-            <CommonContainer>
+            <CommonContainer as="section">
                 <MinorHeading>
                     Found {users.length} users containing "{username}":
                 </MinorHeading>

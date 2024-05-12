@@ -33,7 +33,10 @@ const UserRepositories = ({ userRepos }) => {
     }
 
     return (
-        <GridWrapper $biggestGap>
+        <GridWrapper
+            as="section"
+            $biggestGap
+        >
             <MinorHeading $marginAround>
                 Repositories:
             </MinorHeading>
