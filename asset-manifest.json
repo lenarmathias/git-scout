@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/git-scout/static/js/main.f73a4372.js",
+    "main.js": "/git-scout/static/js/main.5e120756.js",
     "static/js/453.b005d476.chunk.js": "/git-scout/static/js/453.b005d476.chunk.js",
-    "static/media/GitScoutError.svg": "/git-scout/static/media/GitScoutError.ad7ab8499ca07b2daa69ad7edd84ff7f.svg",
-    "static/media/GitScoutLogo.svg": "/git-scout/static/media/GitScoutLogo.47cde8e14878d2f0bb49e9084215c14d.svg",
-    "static/media/LoadingCircle.svg": "/git-scout/static/media/LoadingCircle.a67ac59b610921eac63fb2d16c51fb69.svg",
-    "static/media/WebsiteIcon.svg": "/git-scout/static/media/WebsiteIcon.4275514a4e572ceeaf11f5e2ca950851.svg",
-    "static/media/GitScoutIdle.svg": "/git-scout/static/media/GitScoutIdle.718d14fef0e6aeb9ca6a72f0b89ed685.svg",
-    "static/media/GitScoutNotFound.svg": "/git-scout/static/media/GitScoutNotFound.c0df4bf53cf4beab1c03665661c56088.svg",
-    "static/media/MailIcon.svg": "/git-scout/static/media/MailIcon.83bd3ea78897aa0bc637ac069cde08ca.svg",
-    "static/media/GitHubIcon.svg": "/git-scout/static/media/GitHubIcon.3359e02273eab05e3dd9da444da8a33e.svg",
-    "static/media/LinkedInIcon.svg": "/git-scout/static/media/LinkedInIcon.eadb02b2257735f27ae01bd7d89182f0.svg",
+    "static/media/GitScoutError.svg": "/git-scout/static/media/GitScoutError.8ec360acc764ceac60e14d3adbfa0c94.svg",
+    "static/media/GitScoutLogo.svg": "/git-scout/static/media/GitScoutLogo.cd91be07b887e15af4ae46a53c6d04f5.svg",
+    "static/media/LoadingCircle.svg": "/git-scout/static/media/LoadingCircle.84df26d2a30b30526cc6777eac466d78.svg",
+    "static/media/WebsiteIcon.svg": "/git-scout/static/media/WebsiteIcon.edd6ed503118855d5a1163984630fdf1.svg",
+    "static/media/GitScoutIdle.svg": "/git-scout/static/media/GitScoutIdle.5a04b92761138bec5147b92a9dca321c.svg",
+    "static/media/GitScoutNotFound.svg": "/git-scout/static/media/GitScoutNotFound.2732a42f476f63138fef85428756ee0a.svg",
+    "static/media/MailIcon.svg": "/git-scout/static/media/MailIcon.4c97aba38905bd2f77e62579307f48f9.svg",
+    "static/media/GitHubIcon.svg": "/git-scout/static/media/GitHubIcon.82b40ba2e935be31f63ebdfea0c449be.svg",
+    "static/media/LinkedInIcon.svg": "/git-scout/static/media/LinkedInIcon.43ee4c1197a2699dcd61caa178ab442f.svg",
     "index.html": "/git-scout/index.html",
-    "static/media/XIcon.svg": "/git-scout/static/media/XIcon.5b8f100ae2498c74f41427ea70848d8e.svg",
-    "main.f73a4372.js.map": "/git-scout/static/js/main.f73a4372.js.map",
+    "static/media/XIcon.svg": "/git-scout/static/media/XIcon.88e9b77aba96d4cb9a24ce49512447ea.svg",
+    "main.5e120756.js.map": "/git-scout/static/js/main.5e120756.js.map",
     "453.b005d476.chunk.js.map": "/git-scout/static/js/453.b005d476.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.f73a4372.js"
+    "static/js/main.5e120756.js"
   ]
 }
