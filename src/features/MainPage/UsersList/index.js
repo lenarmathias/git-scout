@@ -47,7 +47,13 @@ const UsersList = ({
         return (
             <CommonContainer as="section">
                 <MinorHeading>
-                    Found {users.length} users containing "{username}":
+                    {users.length === 30 ? "First" : "Found"}
+                    {" "}
+                    {users.length}
+                    {" "}
+                    {users.length === 1 ? "user" : "users"}
+                    {" "}
+                    containing "{username}":
                 </MinorHeading>
                 <UsernamesList>
                     {users.map(user => (
