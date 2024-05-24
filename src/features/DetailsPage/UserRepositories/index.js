@@ -38,7 +38,7 @@ const UserRepositories = ({ userRepos }) => {
             $biggestGap
         >
             <MinorHeading $marginAround>
-                Repositories:
+                {apiObject.length === 30 ? "First 30 repositories:" : "Repositories:"}
             </MinorHeading>
             <GridWrapper $repoWrapper>
                 {apiObject.map(repo => (
