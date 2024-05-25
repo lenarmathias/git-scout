@@ -2,6 +2,7 @@ import Error from "../../../common/Actions/Error";
 import Idle from "../../../common/Actions/Idle";
 import Loading from "../../../common/Actions/Loading";
 import NotFound from "../../../common/Actions/NotFound";
+import ToTopButton from "../../../common/Elements/ToTopButton";
 import {
     UsernamesList,
     UserListItem
@@ -45,7 +46,10 @@ const UsersList = ({
 
     if (apiSuccess === true) {
         return (
-            <CommonContainer as="section">
+            <CommonContainer
+                as="section"
+                $marginBottom
+            >
                 <MinorHeading>
                     {users.length === 30 ? "First" : "Found"}
                     {" "}
@@ -73,6 +77,7 @@ const UsersList = ({
                         </UserListItem>
                     ))}
                 </UsernamesList>
+                <ToTopButton />
             </CommonContainer>
         );
     }

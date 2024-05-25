@@ -1,6 +1,7 @@
 import { useRepositoriesApi } from "./useRepositoriesApi";
 import Loading from "../../../common/Actions/Loading";
 import Error from "../../../common/Actions/Error";
+import ToTopButton from "../../../common/Elements/ToTopButton";
 import {
     MinorHeading,
     CommonParagraph,
@@ -93,6 +94,7 @@ const UserRepositories = ({ userRepos }) => {
                     </CommonContainer>
                 ))}
             </GridWrapper>
+            <ToTopButton />
         </GridWrapper>
     )
 };

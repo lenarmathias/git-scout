@@ -82,6 +82,7 @@ export const GridWrapper = styled.div`
     `}
 
     ${({ $repoWrapper }) => $repoWrapper && css`
+        margin-bottom: 80px;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 16px;
 

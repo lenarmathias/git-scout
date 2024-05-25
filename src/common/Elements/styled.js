@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import { GoChevronUp } from "react-icons/go";
 
 export const UserAvatar = styled.img`
     width: 50px;
@@ -22,4 +23,36 @@ export const UserAvatar = styled.img`
         height: 100px;
         outline: 2px ${({ theme }) => theme.colors.white} solid;
     `}
+`;
+
+export const RoundButtonFrame = styled.button`
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: ${({ theme }) => theme.colors.white};
+    border: 1px ${({ theme }) => theme.colors.bluePlaza};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (hover: hover) {
+        &:hover > * {
+            transform: scale(1.4);
+        }   
+    }
+
+    ${({ $visibility }) => $visibility && css`
+        display: none;
+    `}
+`;
+
+export const ToTopIcon = styled(GoChevronUp)`
+    width: 100%;
+    height: auto;
+    color: ${({ theme }) => theme.colors.ninja};
+    transition: 0.5s;
 `;

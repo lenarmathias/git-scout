@@ -32,6 +32,10 @@ export const CommonContainer = styled.div`
             }
         }
     `}
+
+    ${({ $marginBottom }) => $marginBottom && css`
+        margin-bottom: 80px;
+    `}
 `;
 
 export const TopBorder = styled.div`
