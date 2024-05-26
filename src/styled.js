@@ -35,7 +35,8 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.5;
     }
 
-    a {
+    a, button {
         -webkit-tap-highlight-color: transparent;
+        cursor: pointer;
     }
 `;

@@ -1,5 +1,21 @@
 # GitScout
 
+![GitScout Logo](public/images/GSLogoReadme.png)
+
+A React-based app for effortless searching of GitHub users.
+
+---
+
+## Overview
+
+GitScout is an app inspired by GitHub that uses the GitHub REST API to search for GitHub users. Due to the lack of an API token, GitScout is customized to return a limited number of search results. This is my personal project that I created for my own exercise and learning purposes, allowing me to explore and implement various web development techniques and work with the GitHub REST API.
+
+### Features
+
+- Simple and intuitive user interface
+- Real-time search results based on GitHub's database
+- Quick access to user profile details
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ---
@@ -7,6 +23,34 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Demo
 
 You can find the live version of my To-Do List project on GitHub Pages [here](https://lenarmathias.github.io/git-scout/).
+
+---
+
+## Usage Instruction
+
+![Initial Page View](public/images/initialView.jpeg)
+
+The image above shows the initial view that the user will see upon opening the app.
+
+The **logo** at the top is a link that will always bring the user back to the main page of the app.
+
+On the right side is the **Project Info** section, which contains a link to a page with more details about the project and me.
+
+The user can enter a username in the **Search GitHub User** section, and the results will be displayed in the bottom section.
+
+After finding a matching username, the user can select a GitHub user by **clicking on their username or avatar** to navigate to the **details page**. Additionally, a white button located at the bottom right corner enables quick scrolling to the top of the page.
+
+![Details Page View](public/images/detailsView.jpeg)
+
+The image above displays the **details page** that users will see after clicking on a user from the list.
+
+The details page contains public information provided by the user. On the right side, there are links to the **user's GitHub page**, **X (Twitter) profile** page, and **user blog**. If any of these links are not included by the user, they will be greyed out and disabled.
+
+**Each of these links will open in a new window.**
+
+At the bottom, there will be a list of the **user's public repositories**. Due to the lack of an API token, if the user has more than 30 public repositories, only the first 30 repositories will be shown. Each tile represents a repository and contains general information along with links to the **GitHub repository** page and, if available, a **demo page**. These links also open in a new window.
+
+That's it for the usage instructions. Enjoy using **GitScout**!
 
 ---
 
